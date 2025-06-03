@@ -54,3 +54,24 @@
     font-weight: 280;
     font-size: 1rem;
 }
+
+
+@media screen and (max-width:480px) {
+
+    .title {
+        padding: 40px 30px;
+    }
+
+    .titleText h1 {
+        font-weight: 650;
+        font-size: 1.5rem;
+    }
+
+    .titleText p {
+        margin-top: 8px;
+
+        font-weight: 280;
+        font-size: 0.75rem;
+    }
+
+}

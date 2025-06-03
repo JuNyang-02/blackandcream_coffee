@@ -46,14 +46,6 @@
     padding: 0 10px;
     margin-top: 15px;
 }
-
-@media screen and (max-width:480px) {
-    .commuteButton {
-        width: 100%;
-        justify-content: space-around;
-    }
-}
-
 .commuteButton button{
     width: 140px;
     height: 50px;
@@ -265,6 +257,7 @@
     }
 }
 
+
 @media screen and (max-width:768px) {
     .workUpdate {
         margin: 60px 40px;
@@ -272,5 +265,30 @@
 
     .note textarea  {
         width: 400px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .workUpdate {
+        margin: 60px 20px;
+    }
+
+    .commuteButton {
+        width: 320px;
+        justify-content: space-around;
+    }
+
+    .restSelect {
+        flex-direction: column;
+        align-items: start;
+        margin-left: 10px;
+    }
+
+    .rest label {
+        margin-bottom: 12px;
+    }
+
+    .note textarea  {
+        width: 100%;
     }
 }
