@@ -9,7 +9,7 @@
 }
 
 .commute {
-    padding-bottom: 35px;
+    padding-bottom: 50px;
     margin-bottom: 60px;
     border-bottom: 1px solid #0000001f;
 }
@@ -22,7 +22,6 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 15px;
-    margin-bottom: 30px;
 }
 
 .commuteTitle h1 {
@@ -41,11 +40,18 @@
 }
 
 .commuteButton {
-    width: 350px;
+    width: 360px;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
     margin-top: 15px;
+}
+
+@media screen and (max-width:480px) {
+    .commuteButton {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 .commuteButton button{
@@ -69,9 +75,9 @@
     display: flex;
     flex-direction: column;
 
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
-    padding-bottom: 35px;
+    padding-bottom: 60px;
     border-bottom: 1px solid #0000001f;
 }
 
@@ -79,7 +85,6 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 15px;
-    margin-bottom: 30px;
     /* border-bottom: 1px solid #0000001f; */
 }
 
@@ -98,6 +103,12 @@
     font-size: 0.9rem;
 }
 
+.restSelect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .rest label {
     font-weight: 500;
     font-size: 1.2rem;
@@ -106,40 +117,75 @@
 
 .rest select {
     width: 220px;
+    height: 50px;
     border: 1px solid #c4c4c4;
-    border-radius: 12px;
+    border-radius: 16px;
     box-sizing: border-box;
-    padding: 12px;
+    padding-left: 15px;
     box-shadow: 0px 0px 10px #00000011;
+    background-color: #ffffff;
+
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.rest select:focus {
+    outline-color: #111111d8;
 }
 
 .note {
     display: flex;
     flex-direction: column;
-    width: 500px;
 
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 
-    padding-bottom: 35px;
+    padding-bottom: 60px;
     border-bottom: 1px solid #0000001f;
+}
+
+.noteTitle {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+.noteTitle h1 {
+    font-weight: 650;
+    font-size: 1.5rem;
+}
+
+.noteTitle p {
+    margin-left: 20px;
+    padding-bottom: 0.25rem;
+    align-self: flex-end;
+    color: #636363;
+
+    font-weight: 250;
+    font-size: 0.9rem;
 }
 
 .note textarea {
     border: 1px solid #c4c4c481;
+    width: 500px;
     height: 180px;
     box-shadow: 0px 0px 10px #00000020;
     font-size: 0.9rem;
     font-weight: 200;
     font-family: "Pretendard";
     margin-bottom: 30px;
+    background-color: #ffffff;
 }
 
 .note textarea::placeholder {
     color: #00000063;
 }
 
+.note textarea:focus {
+    outline-color: #111111d8;
+}
+
 .note button {
-    width: 110px;
+    width: 150px;
     padding: 8px;
 
     box-sizing: border-box;
@@ -152,11 +198,32 @@
 
     color: #ffffff;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.goto {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 70px;
+    border-bottom: 1px solid #0000001f;
+}
+
+.gotoTitle {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+}
+
+.gotoTitle h1 {
+    font-weight: 650;
+    font-size: 1.5rem;
 }
 
 .link {
-    width: 110px;
+    width: 150px;
     padding: 8px;
 
     box-sizing: border-box;
@@ -169,7 +236,41 @@
 
     color: #ffffff;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
     text-align: center;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    font-weight: 200;
+    color: #00000080;
+    align-self: end;
+    text-align: left;
+}
+
+.describe {
+    margin-bottom: 30px;
+    color: #636363;
+
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.25em;
+}
+
+
+@media screen and (max-width:1279px) {
+    .workUpdate {
+        margin: 80px 80px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .workUpdate {
+        margin: 60px 40px;
+    }
+
+    .note textarea  {
+        width: 400px;
+    }
 }
