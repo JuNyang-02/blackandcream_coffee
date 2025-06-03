@@ -8,20 +8,29 @@
     flex-direction: column;
 }
 
-.title {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+.commute {
+    padding-bottom: 35px;
+    margin-bottom: 60px;
     border-bottom: 1px solid #0000001f;
 }
 
-.title h1 {
+.commuteButton button:hover{
+    background-color: #b1b1b1d8;
+}
+
+.commuteTitle {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.commuteTitle h1 {
     font-weight: 650;
     font-size: 1.5rem;
 }
 
-.title p {
+.commuteTitle p {
     margin-left: 20px;
     padding-bottom: 0.25rem;
     align-self: flex-end;
@@ -31,16 +40,15 @@
     font-size: 0.9rem;
 }
 
-.commute {
+.commuteButton {
     width: 350px;
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
     margin-top: 15px;
-    margin-bottom: 30px;
 }
 
-.commute button {
+.commuteButton button{
     width: 140px;
     height: 50px;
 
@@ -57,21 +65,37 @@
     font-size: 1rem;
 }
 
-.commute button:hover {
-    background-color: #b1b1b1d8;
-}
-
 .rest {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 
     margin-bottom: 30px;
 
-    padding-left: 12px;
-
     padding-bottom: 35px;
     border-bottom: 1px solid #0000001f;
+}
+
+.restTitle {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    /* border-bottom: 1px solid #0000001f; */
+}
+
+.restTitle h1 {
+    font-weight: 650;
+    font-size: 1.5rem;
+}
+
+.restTitle p {
+    margin-left: 20px;
+    padding-bottom: 0.25rem;
+    align-self: flex-end;
+    color: #636363;
+
+    font-weight: 250;
+    font-size: 0.9rem;
 }
 
 .rest label {

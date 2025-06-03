@@ -46,17 +46,23 @@ export default function WorkUpdate() {
 
     return (
         <div className={styles.workUpdate}>
-            <div className={styles.title}>
-                <h1>근태 기록</h1>
-                <p id="result">{resultText}</p>
-            </div>
-
             <div className={styles.commute}>
-                <button onClick={() => sendWork('출근')}>출근</button>
-                <button onClick={() => sendWork('퇴근')}>퇴근</button>
+                <div className={styles.commuteTitle}>
+                    <h1>01. 출퇴근 기록</h1>
+                    <p id="result">{resultText}</p>
+                </div>
+
+                <div className={styles.commuteButton}>
+                    <button onClick={() => sendWork('출근')}>출근</button>
+                    <button onClick={() => sendWork('퇴근')}>퇴근</button>
+                </div>
             </div>
 
             <div className={styles.rest}>
+                <div className={styles.restTitle}>
+                    <h1>02. 휴게시간</h1>
+                    <p id="result">{resultText}</p>
+                </div>
                 <label htmlFor="breakTime">휴게시간 선택:</label>
                 <select id="breakTime" value={breakTime} onChange={sendBreakTime}>
                     <option value="0">0 시간</option>
